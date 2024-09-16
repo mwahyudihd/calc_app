@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body class="absolute w-full bg-info d-flex h__full p-4 justify-content-center items__center">
+    <section x-data="count" class="container absolute rounded-3 p-4 d-flex bg-white w__ui justify-content-center align-items-center flex-column">
+        <div class="rounded-3 input__container w-full">
+            <input type="text" x-model="num" class="form-control mirror" x-text="0" readonly>
+        </div>
+        <div class="container mx__auto border w-xl rounded-3 mt-3 d-grid col-md-12">
+            <div class="row">
+                <button @click="clear()" class="btn btn-danger sized-button col-sm">C</button>
+                <button @click="backspace()" class="btn btn-dark sized-button col-sm">&larr;</button>
+                <button @click="append('%')" class="btn btn-dark sized-button col-sm">%</button>
+                <button @click="append('/')" class="btn btn-primary sized-button col-sm">/</button>
+            </div>
+            <div class="row">
+                <button @click="append('7')" class="btn btn-dark sized-button col-sm">7</button>
+                <button @click="append('8')" class="btn btn-dark sized-button col-sm">8</button>
+                <button @click="append('9')" class="btn btn-dark sized-button col-sm">9</button>
+                <button @click="append('*')" class="btn btn-primary sized-button col-sm">*</button>
+            </div>
+            <div class="row">
+                <button @click="append('4')" class="sized-button btn btn-dark col-sm">4</button>
+                <button @click="append('5')" class="sized-button btn btn-dark col-sm">5</button>
+                <button @click="append('6')" class="sized-button btn btn-dark col-sm">6</button>
+                <button @click="append('-')" class="sized-button btn btn-primary col-sm">-</button>
+            </div>
+            <div class="row">
+                <button @click="append('1')" class="sized-button btn btn-dark col-sm">1</button>
+                <button @click="append('2')" class="sized-button btn btn-dark col-sm">2</button>
+                <button @click="append('3')" class="sized-button btn btn-dark col-sm">3</button>
+                <button @click="append('+')" class="sized-button btn btn-primary col-sm">+</button>
+            </div>
+            <div class="row">
+                <button @click="append('0')" class="sized-button btn btn-dark col-sm">0</button>
+                <button @click="append('.')" class="sized-button btn btn-dark col-sm">.</button>
+                <button @click="compute()" class="sized-button btn btn-success col-sm-4">=</button>
+            </div>
+        </div>
+    </section>
+    <script src="dist/js/app.bundle.min.js"></script>
+</body>
+</html>
