@@ -11,3 +11,13 @@ This repository is dedicated to storing my learning project, named calc_app. It 
 ## Tech Stack
 
 **Stack:** Alpine Js, Bootstrap.
+
+## Usage/Examples
+
+- [0-9] Key press : for number
+- '.' key press : for computational decimal digit
+- '%' key press : for computational precentage digit
+- [+,-,/,*] key press : for mathematical operations.
+- '=' key press : for result.
+- Backspace : for to remove numbers or maths operations.
+- Delete key press : for clear input data/field.
