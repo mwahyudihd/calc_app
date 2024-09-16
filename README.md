@@ -14,10 +14,10 @@ This repository is dedicated to storing my learning project, named calc_app. It 
 
 ## Usage/Examples
 
-- [0-9] Key press : for number
-- '.' key press : for computational decimal digit
-- '%' key press : for computational precentage digit
+- [0-9] Key press : for number values.
+- '.' key press : for computational decimal digit.
+- '%' key press : for computational precentage digit.
 - [+,-,/,*] key press : for mathematical operations.
-- '=' key press : for result.
-- Backspace : for to remove numbers or maths operations.
-- Delete key press : for clear input data/field.
+- '=' key press : to result.
+- Backspace : to remove numbers or maths operations.
+- Delete key press : to clear input data/field.
